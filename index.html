@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<title>Bakery</title>
+</head>
+<body>
+
+	<!--Sprite-->
+	<svg style="display: none;">
+		<symbol id="arrow" viewBox="0 0 32 32">
+			<g><path d="M32 15.998c0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16 0-8.837 7.163-16 16-16 8.836 0 16 7.163 16 16zm-16-14c-7.732 0-14 6.267-14 14 0 7.732 6.268 14 14 14s14-6.268 14-14c0-7.733-6.268-14-14-14zm2.8 9.128l-5.117 4.872 5.116 4.873a.64.64 0 0 1 0 .936.72.72 0 0 1-.983 0l-5.52-5.257a.643.643 0 0 1-.299-.551.643.643 0 0 1 .3-.553l5.52-5.256a.719.719 0 0 1 .982 0 .64.64 0 0 1 0 .936z"/></g>
+		</symbol>
+
+		<symbol id="menu" viewBox="0 0 9 16">
+			<g><path d="M0 0h1v16H0zm4 0h1v16H4zm4 0h1v16H8z"/></g>
+		</symbol>
+	</svg>
+
+	<!--Header-->
+	<header class="header">
+		<div class="header_inner">
+			<h1 class="header_logo"><a class="header_logo" href="#">Gustoso</a></h1>
+			<nav class="nav" id="nav">
+				<a class="nav_link" href="#">Welcome</a>
+				<div class="nav_link">~</div>
+				<a class="nav_link" href="#">Menu</a>
+				<div class="nav_link">~</div>
+				<a class="nav_link" href="#">Reservations</a>
+				<div class="nav_link">~</div>
+				<a class="nav_link" href="#">News</a>
+				<div class="nav_link">~</div>
+				<a class="nav_link" href="#">Contact</a>
+			</nav>
+
+			<button class="nav_toggle" type="button" id="navToggle">
+						<span class="nav_toggle_item">Menu</span>
+					</button>
+
+			<div class="header_social">
+				<a class="header_icon" href="#" target="blank"><img src="assets/images/header/twit.svg"></a>
+				<a class="header_icon" href="#" target="blank"><img src="assets/images/header/face.svg"></a>
+				<a class="header_icon" href="#" target="blank"><img src="assets/images/header/inst.svg"></a>
+			</div>
+		</div><!--/header_inner-->
+	</header>
+
+	<!--Intro-->
+	<div class="intro">
+		<div class="container">
+			<div class="intro_inner">
+				<div class="intro_title">Pastry with love</div>
+				<div class="dashed_line"><img src="assets/images/dashed_line.png"></div>
+				<div class="intro_subtitle">We’re bringing you fresh ingredients every day in ways you can’t resist.</div>
+				<a class="btn_intro" href="#">Our menu</a>
+			</div>
+			<div class="intro_foot">
+				<img class="intro_foot_img_border" src="assets/images/intro_foot.svg">
+				<div class="intro_foot_img"><img src="assets/images/intro_foot_bread.png"></div>
+			</div>
+		</div>
+	</div><!--/intro-->
+
+	<!--Cake-->
+	<section class="cake">
+		<div class="container">
+			<div class="cake_inner">
+
+				<div class="cake_item">
+					<h2 class="section_title">Art of cakes</h2>
+					<div class="section_subtitle">we create delicious memories</div>
+					<div class="cake_text">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.</div>
+
+					<div class="cake_chef">
+						<div class="chef_title">Chef Cook</div>
+						<div class="chef_person">
+							<div class="chef_name">Benito</div>
+							<img class="chef_foto" src="assets/images/cake/chef.svg">
+							<div class="chef_name">Gaspare</div>
+						</div>
+						<div class="chef_quote">Unique creations for unique occasions.</div>
+					</div>
+				</div><!--/cake_item-->
+
+				<div class="cake_item cake_item--right">
+					<div class="cake_blok_foto">
+
+						<div class="cake_foto">
+							<img class="cake_img" src="assets/images/cake/1.png">
+						</div>
+						<div class="cake_foto cake_foto--right">
+							<img class="cake_img" src="assets/images/cake/2.png">
+						</div>
+						<div class="cake_foto cake_foto--bottom">
+							<img class="cake_img" src="assets/images/cake/3.png">
+						</div>
+						<div class="cake_foto cake_foto--right cake_foto--bottom">
+							<img class="cake_img" src="assets/images/cake/4.png">
+						</div>
+
+						<div class="cake_foto_center_img"><img src="assets/images/cake/center.png"></div>
+						<div class="cake_foto_center_text">TASTES SO GOOD!</div>
+
+					</div>
+				</div><!--/cake_item--right-->
+			</div><!--/cake_inner-->
+		</div><!--/container-->
+	</section><!--/cake-->
+
+<!--Pancakes-->
+	<section class="pancakes">
+		<div class="container container--pancakes">
+			<div class="pancakes_inner">
+				<div class="pancakes_item_left">
+					<img class="pancakes_item_left_foto" src="assets/images/pancakes/left_bg.png">
+					<img class="pancakes_rating" src="assets/images/pancakes/rating.svg">
+					<img class="fold" src="assets/images/pancakes/fold.svg">
+				</div>
+				<div class="pancakes_item_right">
+					<h2 class="section_title">Tasty pancakes</h2>
+					<div class="section_subtitle">season favourite</div>
+					<div class="pancakes_text">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</div>
+							<div class="pancakes_slide">
+								<div class="slide_arrow arrow-prev">
+									<svg class="arrow_img">
+										<use xlink:href="#arrow"></use>
+									</svg>
+								</div>
+								<div class="pancakes_slide_foto_block">
+									<div class="slider">
+										<div>
+											<div class="pancakes_slide_item">
+												<a href="#"><img class="pancakes_slide_foto" src="assets/images/pancakes/1.svg"></a>
+											</div>
+										</div>
+										<div>
+											<div class="pancakes_slide_item">
+												<a href="#"><img class="pancakes_slide_foto" src="assets/images/pancakes/2.svg"></a>
+											</div>
+										</div>
+										<div>
+											<div class="pancakes_slide_item">
+												<a href="#"><img class="pancakes_slide_foto" src="assets/images/pancakes/3.svg"></a>
+											</div>
+										</div>
+										<div>
+											<div class="pancakes_slide_item">
+												<a href="#"><img class="pancakes_slide_foto" src="assets/images/pancakes/4.jpg"></a>
+											</div>
+										</div>
+										<div>
+											<div class="pancakes_slide_item">
+												<a href="#"><img class="pancakes_slide_foto" src="assets/images/pancakes/5.jpg"></a>
+											</div>
+										</div>
+										<div>
+											<div class="pancakes_slide_item">
+												<a href="#"><img class="pancakes_slide_foto" src="assets/images/pancakes/6.jpg"></a>
+											</div>
+										</div>
+									</div><!--/slider-->
+								</div>
+								<div class="slide_arrow arrow-next">
+									<svg class="arrow_img arrow_img--right">
+										<use xlink:href="#arrow"></use>
+									</svg>
+								</div>
+							</div>
+
+					<img class="pancakes_windmill" src="assets/images/pancakes/windmill.png">
+					<a class="pancakes_menu" href="#">
+						<svg class="pancakes_menu_icon">
+							<use xlink:href="#menu"></use>
+						</svg>
+					</a>
+
+				</div><!--/pancakes_item_right-->
+
+				<div class="ready">
+					<p class="ready_r">ready in</p>
+					<p class="ready_time">40</p>
+					<p class="ready_mins">mins</p>
+				</div>
+
+			</div><!--/pancakes_inner-->
+		</div><!--/container-->
+	</section><!--/pancakes-->
+
+<!--Breakfast-->
+	<section class="breakfast">
+		<div class="container">
+			<div class="breakfast_inner">
+				<div class="breakfast_menu">
+					<div class="breakfast_menu_title">Breakfast</div>
+					<div class="breakfast_menu_subtitle">7am Breakfast? we’re open!</div>
+					<div class="breakfast_menu_inner">
+						<div class="breakfast_menu_item">
+							<div class="breakfast_menu_name">Full breakfast</div>
+							<div class="breakfast_menu_text">Duis ut tortor, et risus, vulputate pretium</div>
+							<div class="breakfast_menu_price">$12.49</div>
+						</div>
+						<div class="breakfast_menu_item">
+							<div class="breakfast_menu_name">Toast & Jam</div>
+							<div class="breakfast_menu_text">Suspendisse, tempus, nterdum</div>
+							<div class="breakfast_menu_price">$4.90</div>
+						</div>
+						<div class="breakfast_menu_item">
+							<div class="breakfast_menu_name">Muffins</div>
+							<div class="breakfast_menu_text">Fusce eget dui sodales est</div>
+							<div class="breakfast_menu_price">$3.95</div>
+						</div>
+					</div><!--/breakfast_menu_inner-->
+				</div><!--/breakfast_menu-->
+
+				<div class="breakfast_list">
+					<div class="breakfast_list_position">
+						<div class="breakfast_list_inner">
+							<img class="breakfast_list_bg" src="assets/images/breakfast/list.png">
+							<div class="breakfast_list_content">
+
+								<div class="breakfast_list_head">
+									<div class="breakfast_list_head_item">EST.</div>
+									<div class="breakfast_list_head_item breakfast_list_head_item--right">1893</div>
+								</div>
+
+								<div class="breakfast_list_info">
+									<div class="breakfast_list_title">Your morning Escape with Flair</div>
+									<div class="breakfast_list_text">
+										<p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+									</div>
+									<a class="btn_breakfast_list" href="#">READ</a>
+								</div>
+							</div>
+						</div><!--/breakfast_list_inner-->
+					</div>
+				</div><!--/breakfast_list-->
+			</div><!--/breakfast_inner-->
+		</div><!--/container-->
+	</section><!--/breakfast-->
+
+<!--Sandwich-->
+	<section class="sandwich">
+		<div class="container">
+			<div class="sandwich_head">
+				<h2 class="section_title">The Jibarito sandwich</h2>
+				<div class="section_subtitle">the best sandwich you’ve ever tasted!</div>
+			</div>
+			<div class="sandwich_inner">
+				<div class="sandwich_ingredient">
+					<div class="sandwich_ingredient_item">
+						<img class="sandwich_ingredient_foto" src="assets/images/sandwich/1.svg">
+						<div class="sandwich_ingredient_title">Class aptent</div>
+						<div class="sandwich_ingredient_text">
+							<p>Quot alienum persecuti ut eam, nam ad atqui primis nusquam.</p>
+						</div>
+					</div>
+					<div class="sandwich_ingredient_item">
+						<img class="sandwich_ingredient_foto" src="assets/images/sandwich/2.svg">
+						<div class="sandwich_ingredient_title">Nulla eget</div>
+						<div class="sandwich_ingredient_text">
+							<p>Nullam dictum felis eu pede mollis pretium Integer tincidunt.</p>
+						</div>
+					</div>
+					<div class="sandwich_ingredient_item">
+						<img class="sandwich_ingredient_foto" src="assets/images/sandwich/3.svg">
+						<div class="sandwich_ingredient_title">Sed nibh purus</div>
+						<div class="sandwich_ingredient_text">
+							<p>Aenean eleifend tellus leo ligula, porttitor eu, consequat vitae.</p>
+						</div>
+					</div>
+				</div><!--/sandwich_ingredient-->
+
+				<div class="sandwich_foto">
+					<img class="sandwich_img" src="assets/images/sandwich/sandwich.svg">
+
+					<a class="sandwich_btn" href="#">FULL RECIPE</a>
+
+					<div class="sandwich_time_block">
+						<div class="sandwich_time_block_item">
+							<div class="time_block_name">prep</div>
+							<div class="time_block_time">15</div>
+							<div class="time_block_mins">mins</div>
+						</div>
+						<div class="sandwich_time_block_item">
+							<div class="time_block_name">cook</div>
+							<div class="time_block_time">35</div>
+							<div class="time_block_mins">mins</div>
+						</div>
+						<div class="ready ready--sandwich">
+							<p class="ready_r ready_r--sandwich">ready in</p>
+							<p class="ready_time ready_time--sandwich">50</p>
+							<p class="ready_mins ready_mins--sandwich">mins</p>
+						</div>
+					</div>
+					
+				</div>
+			</div><!--/sandwich_inner-->
+		</div><!--/container-->
+	</section><!--/sandwich-->
+
+<!--Footer-->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer_inner">
+
+				<ul class="footer_menu">
+					<li><a class="menu_item" href="#">our menu</a></li>
+					<li>~</li>
+					<li><a class="menu_item" href="#">gallery</a></li>
+					<li>~</li>
+					<li><a class="menu_item" href="#">culture</a></li>
+				</ul>
+
+				<a class="logo_footer" href="#">Gustoso</a>
+
+				<ul class="footer_menu">
+					<li><a class="menu_item" href="#">events</a></li>
+					<li>~</li>
+					<li><a class="menu_item" href="#">catering</a></li>
+					<li>~</li>
+					<li><a class="menu_item" href="#">visit us</a></li>
+				</ul>
+
+			</div><!--/footer_inner-->
+		</div><!--/container-->
+	</footer><!--/footer-->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="assets/js/app.js"></script>
+
+</body>
+</html>
